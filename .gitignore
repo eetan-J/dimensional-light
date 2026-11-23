@@ -1,0 +1,14 @@
+# Python / environment
+.venv/
+__pycache__/
+*.pyc
+
+# local app state and logs
+app/prefs.json
+*.log
+
+# cached depth maps and test output
+*.depth.npy
+*.tif
+demo.png
+selftest*.png
