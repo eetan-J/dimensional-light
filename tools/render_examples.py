@@ -1,6 +1,6 @@
 """Render the README before/after examples.
 
-Usage:  python tools/render_examples.py <folder with tree.jpg barn.jpg lighthouse.jpg> <out folder>
+Usage:  python tools/render_examples.py <folder with barn.jpg lighthouse.jpg> <out folder>
 
 The example photos are public-domain (CC0) images from Wikimedia Commons; see README.
 """
@@ -17,11 +17,6 @@ from dimlight.depth import estimate_depth             # noqa: E402
 F = e.FogLayer
 
 EXAMPLES = {
-    "tree": dict(
-        title="Depth light with cast shadows: the tree is lit, the distance falls away",
-        params=e.Params(near_ev=0.7, far_ev=-0.9, pivot=0.45, softness=0.12,
-                        near_warmth=0.35, far_warmth=-0.15, shadows=True,
-                        shadow_az=300, shadow_el=25, shadow_strength=0.8, shadow_soft=0.4)),
     "barn": dict(
         title="A thin layer of mist between the barn and the forest",
         params=e.Params(near_ev=0.3, far_ev=-0.35, pivot=0.5, softness=0.15, haze=0.12,

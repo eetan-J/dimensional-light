@@ -19,7 +19,6 @@ real shadows, all with a live preview.
 | | |
 |---|---|
 | **Volumetric mist**: a thin fog layer sits between the barn and the forest. It passes behind the barn, and the barn stays crisp. | ![barn](docs/images/barn-before-after.jpg) |
-| **Depth light + cast shadows**: warm light on the tree and road, with the distance and sky falling away. | ![tree](docs/images/tree-before-after.jpg) |
 | **Depth light**: warm light on the foreground pilings, with the water and treeline pushed back. | ![lighthouse](docs/images/lighthouse-before-after.jpg) |
 
 *Left: original. Right: Dimensional Light. Rendered with [`tools/render_examples.py`](tools/render_examples.py).*
@@ -103,7 +102,6 @@ Tips: double-click any slider to reset it, and use the mouse wheel for fine step
 
 - **Example photos** (all CC0, public domain, Wikimedia Commons):
   - [Barn in Färlev 1](https://commons.wikimedia.org/wiki/File:Barn_in_F%C3%A4rlev_1.jpg)
-  - [Lone Tree Near Farm Fields](https://commons.wikimedia.org/wiki/File:Lone_Tree_Near_Farm_Fields_(209319283).jpeg)
   - [Coast Lighthouse Architecture](https://commons.wikimedia.org/wiki/File:Coast_Lighthouse_Architecture.jpg)
 - **Depth models** are downloaded from Hugging Face at install time and keep their own licences:
   - [Depth Anything V2](https://huggingface.co/depth-anything/Depth-Anything-V2-Large-hf): Large/Base weights are CC-BY-NC-4.0, non-commercial.
