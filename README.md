@@ -59,23 +59,15 @@ In Ultra mode, Depth Pro is shown first so you can start editing right away. The
    - Lightroom plugins can't draw into the Develop module, so the live UI is a separate window.
 3. **Apply to Lightroom** renders at full resolution, writes a 16-bit TIFF next to the original (keeping the ICC profile) and imports it, stacked above the original.
 
-## Requirements
-
-- Windows 10/11, Lightroom Classic, Python 3.10+.
-- An NVIDIA GPU is strongly recommended. CPU works for Fast and Pro but is slow.
-- About 6 GB of disk for the models.
-
 ## Install
 
-```powershell
-git clone https://github.com/eetan-J/dimensional-light.git
-cd dimensional-light
-powershell -ExecutionPolicy Bypass -File install.ps1
-```
+**Full step-by-step guide: [docs/INSTALL.md](docs/INSTALL.md)**, including requirements, troubleshooting, updating and uninstalling.
 
-`install.ps1` creates a `.venv`, installs PyTorch (CUDA 12.8 build, needed for RTX 50-series) and the other dependencies, and pre-downloads the depth models.
+Quick version (Windows 10/11, Lightroom Classic, Python 3.10-3.13, NVIDIA GPU recommended):
 
-Then in Lightroom Classic: **File > Plug-in Manager > Add**, and choose the `DimensionalLight.lrdevplugin` folder. Keep it next to the `app` and `.venv` folders.
+1. Download **`DimensionalLight-vX.Y.Z.zip`** from the [latest release](https://github.com/eetan-J/dimensional-light/releases/latest) and extract it to a permanent folder.
+2. Double-click **`Install.bat`**. It sets up a private Python environment, installs PyTorch (CUDA if an NVIDIA GPU is found) and downloads the depth models (about 6 GB).
+3. In Lightroom Classic: **File > Plug-in Manager > Add**, then select the `DimensionalLight.lrdevplugin` folder.
 
 ## Use
 
