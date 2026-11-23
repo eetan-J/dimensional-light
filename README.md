@@ -99,6 +99,8 @@ Tips: double-click any slider to reset it, and use the mouse wheel for fine step
 
 ## Credits and licences
 
+- **Code:** [MIT](LICENSE). This covers this repository's code only, not the depth models below.
+
 - **Example photos** (all CC0, public domain, Wikimedia Commons):
   - [Barn in Färlev 1](https://commons.wikimedia.org/wiki/File:Barn_in_F%C3%A4rlev_1.jpg)
   - [Lone Tree Near Farm Fields](https://commons.wikimedia.org/wiki/File:Lone_Tree_Near_Farm_Fields_(209319283).jpeg)
